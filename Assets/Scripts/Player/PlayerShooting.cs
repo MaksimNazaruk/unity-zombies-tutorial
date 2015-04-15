@@ -5,7 +5,7 @@ public class PlayerShooting : MonoBehaviour
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
-
+	public GameObject hitParticles;
 
     float timer;
     Ray shootRay;
@@ -59,7 +59,7 @@ public class PlayerShooting : MonoBehaviour
 
         gunLight.enabled = true;
 
-        gunParticles.Stop ();
+        //gunParticles.Stop ();
         gunParticles.Play ();
 
         gunLine.enabled = true;
@@ -74,7 +74,13 @@ public class PlayerShooting : MonoBehaviour
             if(enemyHealth != null)
             {
                 enemyHealth.TakeDamage (damagePerShot, shootHit.point);
-            }
+            } else {
+				hitParticles.transform.position = shootHit.point;
+				hitParticles.transform.rotation = Quaternion.LookRotation(shootHit.normal);
+
+				Hit hitScript = hitParticles.GetComponent<Hit>();
+				hitScript.PlayEffect();
+			}
             gunLine.SetPosition (1, shootHit.point);
         }
         else
