@@ -28,6 +28,7 @@ public class Hit : MonoBehaviour {
 		if (isPlaying && timer > lightTime) {
 			isPlaying = false;
 			light.enabled = false;
+			particles.Stop();
 		}
 	}
 
