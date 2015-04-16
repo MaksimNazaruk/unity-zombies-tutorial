@@ -138,6 +138,10 @@ Prefab:
       propertyPath: ShapeModule.radius
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 19869442, guid: 97da63284566348c4bff6853703ac26e, type: 2}
+      propertyPath: EmissionModule.cnt0
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 97da63284566348c4bff6853703ac26e, type: 2}
   m_IsPrefabParent: 0
@@ -647,7 +651,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
       minMaxState: 0
-    gravityModifier: 1
+    gravityModifier: 3
     inheritVelocity: 0
     maxNumParticles: 1000
   ShapeModule:
