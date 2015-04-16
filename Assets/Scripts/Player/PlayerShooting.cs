@@ -75,6 +75,7 @@ public class PlayerShooting : MonoBehaviour
             {
                 enemyHealth.TakeDamage (damagePerShot, shootHit.point);
             } else {
+
 				hitParticles.transform.position = shootHit.point;
 				hitParticles.transform.rotation = Quaternion.LookRotation(shootHit.normal);
 
