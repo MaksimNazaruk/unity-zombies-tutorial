@@ -6,17 +6,17 @@ public class Hit : MonoBehaviour {
 	public float lightTime = 0.3f;
 
 	ParticleSystem particles;
-	Light light;
+	Light hitLight;
 	float timer;
 	bool isPlaying;
 
 	// Use this for initialization
 	void Awake () {
 		particles = GetComponent<ParticleSystem> ();
-		light = GetComponent<Light> ();
+		hitLight = GetComponent<Light> ();
 
 		particles.Stop ();
-		light.enabled = false;
+		hitLight.enabled = false;
 
 		timer = 0;
 		isPlaying = false;
@@ -27,7 +27,7 @@ public class Hit : MonoBehaviour {
 
 		if (isPlaying && timer > lightTime) {
 			isPlaying = false;
-			light.enabled = false;
+			hitLight.enabled = false;
 			particles.Stop();
 		}
 	}
@@ -37,7 +37,7 @@ public class Hit : MonoBehaviour {
 		isPlaying = true;
 		timer = 0;
 
-		light.enabled = true;
+		hitLight.enabled = true;
 		particles.Play ();
 	}
 

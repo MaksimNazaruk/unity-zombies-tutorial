@@ -59,7 +59,7 @@ public class PlayerShooting : MonoBehaviour
 
         gunLight.enabled = true;
 
-        //gunParticles.Stop ();
+        gunParticles.Stop ();
         gunParticles.Play ();
 
         gunLine.enabled = true;

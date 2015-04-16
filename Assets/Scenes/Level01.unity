@@ -1514,12 +1514,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 531857890}
-  m_LocalRotation: {x: -4.81159006e-08, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.422568023, y: -.309769243, z: -.746149302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1398930908}
-  m_RootOrder: 0
+  m_Father: {fileID: 1913105883}
+  m_RootOrder: 2
 --- !u!114 &531857895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2895,10 +2895,6 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!4 &1398930908
-Transform:
-  m_PrefabParentObject: {fileID: 431954, guid: 7c0984711f070465abaa22e7dd518e58, type: 2}
-  m_PrefabInternal: {fileID: 1913105877}
 --- !u!1 &1511357051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,7 +3039,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400072, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 2}
       propertyPath: m_LocalRotation.y
@@ -3163,7 +3159,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 264661a642c271542841966646e53a7c, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 264661a642c271542841966646e53a7c, type: 2}
       propertyPath: m_IsActive
@@ -3179,7 +3175,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 264661a642c271542841966646e53a7c, type: 2}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 10800002, guid: 264661a642c271542841966646e53a7c, type: 2}
       propertyPath: m_Shadows.m_Type
@@ -3187,10 +3183,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 10800002, guid: 264661a642c271542841966646e53a7c, type: 2}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 10800002, guid: 264661a642c271542841966646e53a7c, type: 2}
       propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: 264661a642c271542841966646e53a7c, type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
