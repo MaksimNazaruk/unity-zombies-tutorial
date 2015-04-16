@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour {
 	Vector3 offset;
 
 	void Start () {
+		Debug.Log ("Start!");
 		offset = transform.position - target.position;
 	}
 
