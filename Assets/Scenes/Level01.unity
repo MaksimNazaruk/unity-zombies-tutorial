@@ -1141,6 +1141,10 @@ Prefab:
       propertyPath: CollisionModule.plane0
       value: 
       objectReference: {fileID: 61148385}
+    - target: {fileID: 19885152, guid: 7c0984711f070465abaa22e7dd518e58, type: 2}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c0984711f070465abaa22e7dd518e58, type: 2}
   m_IsPrefabParent: 0
